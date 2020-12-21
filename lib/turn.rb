@@ -38,9 +38,9 @@ def turn(board)
   input=gets.strip
   index=input_to_index(input)
   character=board[index]
-  binding.pry
   if valid_move?(board,index)
     move(board,index,character)
+    binding.pry
     display_board(board)
   else
     turn(board)
