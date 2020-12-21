@@ -19,7 +19,7 @@ def position_taken?(board,index)
  end
 
 
-def valid_move?(baord,index)
+def valid_move?(boarrd,index)
   (0..8).include?(index) && !position_taken?(board,index)
 end
 
