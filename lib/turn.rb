@@ -19,10 +19,10 @@ def position_taken?(board,index)
  end
 
 
-
 def valid_move?(baord,index)
   (0..8).include?(index) && !position_taken?(board,index)
 end
+
 
 def move(board, index,character)
   board[index]=character
