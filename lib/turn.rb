@@ -8,13 +8,15 @@ def display_board(board)
 end
 
 def input_to_index(integer)
-  interger-1
+  integer-1
 end
 
 index=input_to_index(integer)
 
 def position_taken?(board,index)
-  if board[index] != " "
+  if board[index] == " "
+    false
+  else
     true
   end
 end
