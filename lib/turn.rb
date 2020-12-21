@@ -11,8 +11,14 @@ def input_to_index(integer)
   interger-1
 end
 
+index=input_to_index(integer)
+
 def position_taken?(board,index)
-  
+  if board[index] == " "
+    false
+  end
+end
+
 
 
 def valid_move?(baord,index)
