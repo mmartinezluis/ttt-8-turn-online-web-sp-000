@@ -25,4 +25,3 @@ end
 def valid_move?(baord,index)
   (0..8).include?(index) && !position_taken?(board,index)
 end
-
