@@ -40,7 +40,7 @@ def turn(board)
   character="X","O"
   if valid_move?(board,index)
     move(board,index,character)
-    binding.pry
+    #binding.pry
     display_board(board)
   else
     turn(board)
