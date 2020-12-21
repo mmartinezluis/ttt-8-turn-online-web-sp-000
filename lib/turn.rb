@@ -1,4 +1,4 @@
-
+require "pry"
 def display_board(board)
   puts " #{board[0]} | #{board[1]} | #{board[2]} "
   puts "-----------"
@@ -38,6 +38,7 @@ def turn(board)
   input=gets.strip
   index=input_to_index(input)
   character=board[index]
+  binding.pry
   if valid_move?(board,index)
     move(board,index,character)
     display_board(board)
