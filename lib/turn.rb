@@ -14,8 +14,8 @@ end
 index=input_to_index(integer)
 
 def position_taken?(board,index)
-  if board[index] == " "
-    false
+  if board[index] != " "
+    true
   end
 end
 
